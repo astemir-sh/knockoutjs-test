@@ -1,0 +1,15 @@
+{
+  "name": "knockoutjs-test",
+  "version": "0.0.0",
+  "authors": [
+    "astemir-sh <astemirshereuzhev@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
