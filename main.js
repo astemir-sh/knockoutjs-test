@@ -9,7 +9,8 @@ function AppViewModel(){
 
 	this.fullName = ko.computed(function(){
 		return this.lastName() + ' ' + this.firstName();
-	},this)
+	},this);
+	//test
 };
 
 ko.applyBindings(new AppViewModel());
