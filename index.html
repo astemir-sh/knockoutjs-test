@@ -4,15 +4,36 @@
 	<meta charset="UTF-8">
 	<title>Knockoutjs test</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
 </head>
 <body>
 	<p>First Name: <span data-bind="text:firstName"></span></p>
 	<p>Last Name: <span data-bind="text:lastName"></span></p>
+	<p>Sex: <span data-bind="text:sex"></span></p>
 
-	<p><input type="text" data-bind="value:firstName"/></p>
+	<p>Full Name: <span data-bind="text:fullName"></span></p>
+
+
+	<p><input type="text" data-bind="value:firstName"/></p> 
 	<p><input type="text" data-bind="value:lastName"/></p>
 
+	<div class="col-sm-3 n-pad_r">
+		<select id="sex" class="form-control"
+			data-bind="options: sexOptions, optionsCaption: 'Не выбрано',
+			value: sex, valueAllowUnset: true"></select>
+	</div>
+	<div class="col-sm-3 n-pad_r">
+		<label class="pad_add">Доступ к администрированию
+			<input type="checkbox" data-bind="checked:isAdmin">
+		</label>
+		<div data-bind="visible: isAdmin">sfdsfsf</div>
+	</div>
+
+
 	<script type="text/javascript" src="bower_components/knockout/dist/knockout.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
